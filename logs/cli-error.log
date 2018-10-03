@@ -1,0 +1,27 @@
+2018-09-27 12:39:03 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 321
+Stack Trace:
+#0 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Console\CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migration')
+#1 C:\Users\Panegalli\Desktop\RESTful\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-09-27 12:42:30 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'api_son_restful.users' doesn't exist in C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(325): Cake\ORM\Table->getSchema()
+#4 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(222): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\UsersTable), Array)
+#5 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\UsersTable))
+#6 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\UsersTable), 'users', 'Users')
+#7 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#8 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Users')
+#9 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#10 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('users')
+#12 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Users\Panegalli\Desktop\RESTful\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Users\Panegalli\Desktop\RESTful\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
